@@ -42,7 +42,7 @@ function App() {
             WB<span className="text-accent">.</span>DEV
           </motion.span>
           <div className="flex gap-6 text-sm text-slate-400">
-            {[{ name: 'Home', href: '#' }, { name: 'Projetos', href: '#projetos' }, { name: 'GitHub', href: 'https://github.com/WandersonBorgess' }, { name: 'Contato', href: 'https://wa.me/64984561128' }].map(item => (
+            {[{ name: 'Home', href: '/' }, { name: 'Projetos', href: '#projetos' }, { name: 'GitHub', href: 'https://github.com/WandersonBorgess' }, { name: 'Contato', href: 'https://wa.me/64984561128' }].map(item => (
               <a key={item.name} href={item.href} className="hover:text-white transition-colors" target={item.href.startsWith('http') ? '_blank' : '_self'} rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}>
                 {item.name}
               </a>
