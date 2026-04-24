@@ -1,73 +1,33 @@
-# React + TypeScript + Vite
+# 💻 Fullstack Developer Portfolio | WB.DEV
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Preview do Projeto](https://via.placeholder.com/1200x600?text=Preview+do+Portf%C3%B3lio+Moderno)
 
-Currently, two official plugins are available:
+Este é o meu portfólio pessoal, construído para demonstrar minhas habilidades técnicas como desenvolvedor Fullstack, com foco em arquitetura de software, performance e interfaces modernas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tecnologias Utilizadas
 
-## React Compiler
+O projeto foi desenvolvido utilizando o ecossistema mais moderno de **TypeScript**:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** [Vite](https://vitejs.dev/) + [React](https://reactjs.org/)
+- **Estilização:** [Tailwind CSS](https://tailwindcss.com/) (Design responsivo e utilitário)
+- **Animações:** [Framer Motion](https://www.framer.com/motion/) (Experiência de usuário fluida)
+- **Linguagem:** [TypeScript](https://www.typescriptlang.org/) (Tipagem estrita para maior segurança)
+- **Ícones:** [React Icons](https://react-icons.github.io/react-icons/)
 
-## Expanding the ESLint configuration
+## 🛠️ Funcionalidades Principais
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Design Neo-Minimalista:** Interface limpa focada na legibilidade e experiência do usuário.
+- **Totalmente Responsivo:** Adaptado para dispositivos móveis, tablets e desktops.
+- **Seção de Projetos Dinâmica:** Cards animados com detalhes técnicos de cada solução desenvolvida.
+- **Otimização de Performance:** Build ultra-rápido com Vite e carregamento otimizado de assets.
+- **Scroll Suave e Animações de Entrada:** Interação refinada utilizando observadores de interseção (Intersection Observer).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Estrutura do Projeto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```text
+src/
+ ├── assets/          # Imagens e recursos estáticos
+ ├── components/      # Componentes reutilizáveis (Header, ProjectCard, etc)
+ ├── constants/       # Dados dos projetos e textos (Fácil manutenção)
+ ├── styles/          # Configurações globais do Tailwind
+ └── App.tsx          # Estrutura principal da aplicação
