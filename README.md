@@ -1,7 +1,5 @@
 # 💻 Fullstack Developer Portfolio | WB.DEV
 
-![Preview do Projeto](https://via.placeholder.com/1200x600?text=Preview+do+Portf%C3%B3lio+Moderno)
-
 Este é o meu portfólio pessoal, construído para demonstrar minhas habilidades técnicas como desenvolvedor Fullstack, com foco em arquitetura de software, performance e interfaces modernas.
 
 ## 🚀 Tecnologias Utilizadas
